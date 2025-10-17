@@ -16,7 +16,7 @@ This repository contains a simple profile card component built with HTML, CSS, a
 ### Running Locally
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/pironoid14/hng13-stage-0-Testable-profile-card >
    ```
 2. Navigate to the project directory:
    ```bash
