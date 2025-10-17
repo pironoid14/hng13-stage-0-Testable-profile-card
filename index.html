@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testable Profile Card</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <main>
+        <article class="profile-card" data-testid="test-profile-card">
+            <figure class="profile-avatar">
+                <img src="my pic.png" alt="Profile picture" data-testid="test-user-avatar">
+                <figcaption>Profile Picture</figcaption>
+            </figure>
+
+            <div class="profile-content">
+                <header>
+                    <h2 data-testid="test-user-name">Oghenekaro Peter Emieje</h2>
+                </header>
+
+                <p data-testid="test-user-bio">
+                    A passionate developer who loves creating accessible and responsive web applications.
+                    Currently exploring new technologies and building amazing things.
+                </p>
+
+                <div data-testid="test-user-time" aria-label="Current time in milliseconds">
+                    <!-- Time will be updated by JavaScript -->
+                </div>
+
+                <nav>
+                    <ul data-testid="test-user-social-links">
+                        <li>
+                            <a href="https://twitter.com/pironoid" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               data-testid="test-user-social-twitter">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/pironoid14" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               data-testid="test-user-social-github">
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/oghenekaro-e-36530784" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               data-testid="test-user-social-linkedin">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="profile-lists">
+                    <div class="hobbies">
+                        <h3>Hobbies</h3>
+                        <ul data-testid="test-user-hobbies">
+                            <li>Coding</li>
+                            <li>Reading</li>
+                            <li>Gaming</li>
+                        </ul>
+                    </div>
+
+                    <div class="dislikes">
+                        <h3>Dislikes</h3>
+                        <ul data-testid="test-user-dislikes">
+                            <li>Poor accessibility</li>
+                            <li>Unresponsive designs</li>
+                            <li>Bad coding practices</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
