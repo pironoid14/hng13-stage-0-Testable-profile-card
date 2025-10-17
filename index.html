@@ -10,8 +10,12 @@
     <main>
         <article class="profile-card" data-testid="test-profile-card">
             <figure class="profile-avatar">
-                <img src="my pic.png" alt="Profile picture" data-testid="test-user-avatar">
+                <img src="" alt="Profile picture" data-testid="test-user-avatar" id="profile-avatar-img">
                 <figcaption>Profile Picture</figcaption>
+                <div class="avatar-inputs">
+                    <input type="file" id="avatar-upload-input" accept="image/*" aria-label="Upload avatar">
+                    <div id="avatar-upload-url" style="display:none;"></div>
+                </div>
             </figure>
 
             <div class="profile-content">
