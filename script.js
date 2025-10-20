@@ -168,8 +168,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
     toggle.addEventListener('click', () => {
         const isCollapsed = nav.classList.toggle('collapsed');
-        toggle.setAttribute('aria-expanded', (!isCollapsed).toString());
-        localStorage.setItem('nav-collapsed', isCollapsed.toString());
+        toggle.setAttribute('aria-expanded', (!nav.classList.contains('collapsed')).toString());
+        localStorage.setItem('nav-collapsed', nav.classList.contains('collapsed').toString());
     });
 
     // Allow toggle via Enter/Space when focused
