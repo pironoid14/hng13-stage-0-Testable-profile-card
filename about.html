@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About Me</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <nav aria-label="Primary" class="site-nav" id="site-nav">
+    <button id="nav-toggle" aria-expanded="true" aria-controls="site-nav" class="nav-toggle">☰<span class="visually-hidden">Toggle navigation</span></button>
+    <ul class="nav-list">
+      <li><a href="index.html" aria-label="Home"><span class="link-icon" aria-hidden="true">🏠</span><span class="link-label">Home</span></a></li>
+      <li><a href="about.html" aria-label="About"><span class="link-icon" aria-hidden="true">ℹ️</span><span class="link-label">About</span></a></li>
+      <li><a href="contact.html" aria-label="Contact"><span class="link-icon" aria-hidden="true">✉️</span><span class="link-label">Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <main data-testid="test-about-page">
+    <header>
+      <h1>About Me</h1>
+      <p>A short, reflective page about my journey and thoughts.</p>
+    </header>
+
+    <section aria-labelledby="bio-heading" data-testid="test-about-bio">
+      <h2 id="bio-heading">Bio</h2>
+      <p>I am a curious learner who enjoys building useful projects and improving my skills. I like to experiment with small web projects and iterate quickly.</p>
+    </section>
+
+    <section aria-labelledby="goals-heading" data-testid="test-about-goals">
+      <h2 id="goals-heading">Goals in this program</h2>
+      <ul>
+        <li>Solidify practical frontend skills (HTML, CSS, JS).</li>
+        <li>Ship small projects regularly and learn from feedback.</li>
+        <li>Improve accessibility and testing practices.</li>
+      </ul>
+    </section>
+
+  <section aria-labelledby="confidence-heading" data-testid="test-about-confidence">
+      <h2 id="confidence-heading">Areas of low confidence</h2>
+      <p>Sometimes I struggle with advanced JavaScript concepts like closures in complex flows, and backend integration patterns. I plan to practice more and read targeted resources.</p>
+    </section>
+
+    <section aria-labelledby="future-heading" data-testid="test-about-future-note">
+      <h2 id="future-heading">Note to future self</h2>
+      <p>Keep shipping and learning; embrace small wins and be patient with progress. Remember to document decisions and reflect weekly.</p>
+    </section>
+
+    <section aria-labelledby="extra-heading" data-testid="test-about-extra">
+      <h2 id="extra-heading">Extra thoughts</h2>
+      <p>Learning is a long-term process — focus on steady improvement and collaborate with others when stuck.</p>
+    </section>
+  </main>
+</body>
+</html>
